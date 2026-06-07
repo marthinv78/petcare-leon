@@ -1,10 +1,362 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>PetCare León</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PetCare León | Veterinaria Profesional</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f8fafc;
+color:#1e293b;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+header{
+position:fixed;
+width:100%;
+top:0;
+background:white;
+box-shadow:0 2px 15px rgba(0,0,0,.05);
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:700;
+color:#2563eb;
+}
+
+.btn{
+display:inline-block;
+background:#2563eb;
+color:white;
+padding:14px 28px;
+border-radius:12px;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+.hero{
+padding-top:140px;
+padding-bottom:80px;
+}
+
+.hero-content{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.hero h1{
+font-size:3.2rem;
+line-height:1.1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.1rem;
+margin-bottom:30px;
+color:#64748b;
+}
+
+.hero img{
+width:100%;
+border-radius:25px;
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+.section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+font-size:2.3rem;
+margin-bottom:50px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:20px;
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.testimonial{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+.cta{
+background:#2563eb;
+color:white;
+padding:80px 20px;
+text-align:center;
+border-radius:30px;
+}
+
+.cta h2{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#64748b;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+z-index:999;
+}
+
+@media(max-width:768px){
+
+.hero-content{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:2.2rem;
+}
+
+.section-title{
+font-size:1.8rem;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-    <h1>PetCare León</h1>
-    <p>Sitio en construcción.</p>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo">🐾 PetCare León</div>
+<a href="#" class="btn">Agendar cita</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<div class="container">
+<div class="hero-content">
+
+<div>
+<h1>Cuidamos a tu mejor amigo como si fuera nuestro</h1>
+
+<p>
+Atención veterinaria profesional para perros y gatos.
+Consultas, vacunación, estética canina y urgencias.
+</p>
+
+<a href="#" class="btn">Solicitar información</a>
+</div>
+
+<div>
+<img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=1200" alt="">
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="section">
+<div class="container">
+
+<h2 class="section-title">Nuestros Servicios</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>🐶 Consulta General</h3>
+<p>Revisión completa para mantener la salud de tu mascota.</p>
+</div>
+
+<div class="card">
+<h3>💉 Vacunación</h3>
+<p>Esquemas completos para perros y gatos.</p>
+</div>
+
+<div class="card">
+<h3>✂️ Estética Canina</h3>
+<p>Baño, corte y cuidado especializado.</p>
+</div>
+
+<div class="card">
+<h3>🚑 Urgencias</h3>
+<p>Atención inmediata para emergencias.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">Nuestras Instalaciones</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=1200">
+
+<img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=1200">
+
+<img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200">
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<h2 class="section-title">Lo que dicen nuestros clientes</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>Excelente atención y muy profesionales.</p>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>Mi perro siempre sale feliz después de cada visita.</p>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>Instalaciones impecables y personal muy amable.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="cta">
+
+<h2>Agenda una cita hoy mismo</h2>
+
+<p>
+Tu mascota merece la mejor atención.
+</p>
+
+<br>
+
+<a href="#" class="btn" style="background:white;color:#2563eb;">
+Contactar por WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 PetCare León · Demo desarrollado por Nano Studio</p>
+
+</footer>
+
+<a class="whatsapp" href="#">
+💬
+</a>
+
 </body>
 </html>
