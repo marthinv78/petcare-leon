@@ -1,362 +1,202 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PetCare León | Veterinaria Profesional</title>
+<title>PetCare León | Dra. Alicia Juárez</title>
 
+<link rel="stylesheet" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
-body{
-background:#f8fafc;
-color:#1e293b;
-}
-
-.container{
-width:90%;
-max-width:1200px;
-margin:auto;
-}
-
-header{
-position:fixed;
-width:100%;
-top:0;
-background:white;
-box-shadow:0 2px 15px rgba(0,0,0,.05);
-z-index:1000;
-}
-
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 0;
-}
-
-.logo{
-font-size:1.5rem;
-font-weight:700;
-color:#2563eb;
-}
-
-.btn{
-display:inline-block;
-background:#2563eb;
-color:white;
-padding:14px 28px;
-border-radius:12px;
-text-decoration:none;
-font-weight:600;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-}
-
-.hero{
-padding-top:140px;
-padding-bottom:80px;
-}
-
-.hero-content{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:50px;
-align-items:center;
-}
-
-.hero h1{
-font-size:3.2rem;
-line-height:1.1;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:1.1rem;
-margin-bottom:30px;
-color:#64748b;
-}
-
-.hero img{
-width:100%;
-border-radius:25px;
-box-shadow:0 15px 40px rgba(0,0,0,.15);
-}
-
-.section{
-padding:80px 0;
-}
-
-.section-title{
-text-align:center;
-font-size:2.3rem;
-margin-bottom:50px;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:30px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.06);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card h3{
-margin-bottom:10px;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-height:260px;
-object-fit:cover;
-border-radius:20px;
-}
-
-.testimonials{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:25px;
-}
-
-.testimonial{
-background:white;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.06);
-}
-
-.cta{
-background:#2563eb;
-color:white;
-padding:80px 20px;
-text-align:center;
-border-radius:30px;
-}
-
-.cta h2{
-font-size:2.5rem;
-margin-bottom:20px;
-}
-
-footer{
-padding:40px;
-text-align:center;
-color:#64748b;
-}
-
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-color:white;
-width:65px;
-height:65px;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:30px;
-text-decoration:none;
-box-shadow:0 10px 25px rgba(0,0,0,.2);
-z-index:999;
-}
-
-@media(max-width:768px){
-
-.hero-content{
-grid-template-columns:1fr;
-}
-
-.hero h1{
-font-size:2.2rem;
-}
-
-.section-title{
-font-size:1.8rem;
-}
-
-}
-
-</style>
 </head>
 
 <body>
 
-<header>
-<div class="container">
-<nav>
-<div class="logo">🐾 PetCare León</div>
-<a href="#" class="btn">Agendar cita</a>
-</nav>
+<header id="header">
+
+<div class="container nav">
+
+<div class="logo">
+🐾 PetCare León
 </div>
+
+<nav>
+<a href="#inicio">Inicio</a>
+<a href="#servicios">Servicios</a>
+<a href="#doctora">Doctora</a>
+<a href="#galeria">Galería</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<a href="#" class="btn-nav">
+Agendar cita
+</a>
+
+</div>
+
 </header>
 
-<section class="hero">
-<div class="container">
+<section class="hero" id="inicio">
+
+<div class="overlay"></div>
+
 <div class="hero-content">
 
-<div>
-<h1>Cuidamos a tu mejor amigo como si fuera nuestro</h1>
+<span class="badge">
+⭐ Más de 500 mascotas atendidas
+</span>
+
+<h1>
+Cuidamos a tu mejor amigo como parte de nuestra familia
+</h1>
 
 <p>
-Atención veterinaria profesional para perros y gatos.
-Consultas, vacunación, estética canina y urgencias.
+Atención veterinaria profesional en León, Guanajuato.
+Consultas, vacunación, cirugía y estética canina.
 </p>
 
-<a href="#" class="btn">Solicitar información</a>
+<div class="hero-buttons">
+
+<a href="#" class="btn-primary">
+WhatsApp
+</a>
+
+<a href="#servicios" class="btn-secondary">
+Nuestros servicios
+</a>
+
 </div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat">
+<h2>500+</h2>
+<p>Mascotas atendidas</p>
+</div>
+
+<div class="stat">
+<h2>10+</h2>
+<p>Años de experiencia</p>
+</div>
+
+<div class="stat">
+<h2>4.9★</h2>
+<p>Calificación promedio</p>
+</div>
+
+</section>
+
+<section class="services" id="servicios">
+
+<h2>Nuestros Servicios</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+<i class="fas fa-stethoscope"></i>
+<h3>Consulta General</h3>
+</div>
+
+<div class="service-card">
+<i class="fas fa-syringe"></i>
+<h3>Vacunación</h3>
+</div>
+
+<div class="service-card">
+<i class="fas fa-scissors"></i>
+<h3>Estética Canina</h3>
+</div>
+
+<div class="service-card">
+<i class="fas fa-heartbeat"></i>
+<h3>Urgencias</h3>
+</div>
+
+<div class="service-card">
+<i class="fas fa-tooth"></i>
+<h3>Limpieza Dental</h3>
+</div>
+
+<div class="service-card">
+<i class="fas fa-hospital"></i>
+<h3>Hospitalización</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="doctor" id="doctora">
+
+<div class="doctor-content">
+
+<img src="images/doctora.jpg">
 
 <div>
-<img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=1200" alt="">
-</div>
 
-</div>
-</div>
-</section>
-
-<section class="section">
-<div class="container">
-
-<h2 class="section-title">Nuestros Servicios</h2>
-
-<div class="services">
-
-<div class="card">
-<h3>🐶 Consulta General</h3>
-<p>Revisión completa para mantener la salud de tu mascota.</p>
-</div>
-
-<div class="card">
-<h3>💉 Vacunación</h3>
-<p>Esquemas completos para perros y gatos.</p>
-</div>
-
-<div class="card">
-<h3>✂️ Estética Canina</h3>
-<p>Baño, corte y cuidado especializado.</p>
-</div>
-
-<div class="card">
-<h3>🚑 Urgencias</h3>
-<p>Atención inmediata para emergencias.</p>
-</div>
-
-</div>
-
-</div>
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">Nuestras Instalaciones</h2>
-
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=1200">
-
-<img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=1200">
-
-<img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200">
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<h2 class="section-title">Lo que dicen nuestros clientes</h2>
-
-<div class="testimonials">
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐
-<p>Excelente atención y muy profesionales.</p>
-</div>
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐
-<p>Mi perro siempre sale feliz después de cada visita.</p>
-</div>
-
-<div class="testimonial">
-⭐⭐⭐⭐⭐
-<p>Instalaciones impecables y personal muy amable.</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<div class="container">
-
-<div class="cta">
-
-<h2>Agenda una cita hoy mismo</h2>
+<h2>Dra. Alicia Juárez</h2>
 
 <p>
-Tu mascota merece la mejor atención.
+Veterinaria especializada en medicina preventiva,
+cirugía menor y atención integral para perros y gatos.
+
+Nuestro objetivo es ofrecer un servicio cálido,
+profesional y de confianza para cada mascota.
 </p>
 
-<br>
+</div>
 
-<a href="#" class="btn" style="background:white;color:#2563eb;">
+</div>
+
+</section>
+
+<section class="gallery" id="galeria">
+
+<h2>Galería</h2>
+
+<div class="gallery-grid">
+
+<img src="images/galeria1.jpg">
+<img src="images/galeria2.jpg">
+<img src="images/galeria3.jpg">
+<img src="images/galeria4.jpg">
+<img src="images/galeria5.jpg">
+<img src="images/galeria6.jpg">
+
+</div>
+
+</section>
+
+<section class="contact" id="contacto">
+
+<h2>Agenda tu cita hoy</h2>
+
+<p>
+Estamos listos para atender a tu mascota.
+</p>
+
+<a href="#" class="btn-primary">
 Contactar por WhatsApp
 </a>
 
-</div>
-
-</div>
-
 </section>
 
-<footer>
-
-<p>© 2026 PetCare León · Demo desarrollado por Nano Studio</p>
-
-</footer>
-
-<a class="whatsapp" href="#">
-💬
+<a href="#" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
 </a>
+
+<script src="script.js"></script>
 
 </body>
 </html>
